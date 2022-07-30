@@ -298,8 +298,8 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       #003bcb !default;
+$secondary:     #8a2440 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -310,7 +310,7 @@ $dark:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "primary":    $purple,
+  "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,
   "info":       $info,
@@ -347,7 +347,7 @@ $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
 $enable-rfs:                  true !default;
 $enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
+$enable-negative-margins:     true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
@@ -390,7 +390,8 @@ $spacers: (
 $position-values: (
   0: 0,
   50: 50%,
-  100: 100%
+  100: 100%,
+  auto:auto,
 ) !default;
 // scss-docs-end position-map
 

@@ -139,7 +139,7 @@ $utilities: map-merge(
       local-vars: (
         "border-opacity": 1
       ),
-      //values: $utilities-border-colors
+      values: $utilities-border-colors
     ),
     "border-width": (
       css-var: true,
@@ -641,15 +641,18 @@ $utilities: map-merge(
         invisible: hidden,
       )
     ),
-
-    "background-color2":(
-        property:background-color,
-        class:bg-c,
-        values:(
-            color:green,
-        )
-    )
     // scss-docs-end utils-visibility
+    //custo,
+    "bg-attachment":(
+        property:background-attachment,
+        class:bg-attachment,
+        values:fixed
+    ),
+    "object-fit":(
+        property:object-fit,
+        class:object-fit,
+        values:cover
+    )
   ),
   $utilities
 );
